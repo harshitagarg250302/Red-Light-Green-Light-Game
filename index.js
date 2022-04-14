@@ -129,7 +129,7 @@ $(document).ready(function(){
         light="green";
         playAudio();
         timer=setInterval(countDown,1000);
-        num=Math.floor(Math.random()*4+1);
+        num=Math.floor(Math.random()*5+2);
         setTimeout(Tored,num*100);
         $("#moveButton").prop('disabled',false);
         $("#stopButton").prop('disabled',false);
