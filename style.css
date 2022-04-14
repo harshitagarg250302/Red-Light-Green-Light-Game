@@ -4,7 +4,14 @@ body{
     background: #C49557;
     line-height: 1.5em;
 }
-
+#warning-message { display: none; }
+    @media only screen and (orientation:portrait){
+        #wrapper { display:none; }
+        #warning-message { display:block; }
+    }
+    @media only screen and (orientation:landscape){
+        #warning-message { display:none; }
+    }
 header{
     background: #333;
     padding: 20px;
@@ -34,6 +41,14 @@ header{
      width: 90%;
      margin: auto;
      padding: 10px;
+ }
+ .start{
+     justify-content: center;
+     text-align: center;
+     padding: 2%;
+ }
+ #start_button{
+     width: 20%;
  }
  #box{
      background-color: black;
@@ -78,9 +93,6 @@ header{
       border: 7px solid #FAFDD6;
     box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
   }
-  #start_game{
-      text-align: center;
-  }
   #finish_line{
       background-color: red;
       width: 10px;
@@ -102,7 +114,7 @@ header{
     display: inline-block;
     position: absolute;
     left: 1110px;
-    top:480px;
+    top:520px;
   }
   .squidSoldier{
       background: url(Assets/squid-soldier.png);

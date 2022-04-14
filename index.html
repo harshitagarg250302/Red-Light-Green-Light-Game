@@ -15,29 +15,15 @@
     <title>squid game</title>
 </head>
 <body>
+  <div id="wrapper">
     <header>
-       <!-- <div class="content">
-           <img src="Assets/text.png" alt="">
-       </div> -->
-
-       <nav class="navbar  navbar-expand-lg navbar-dark">
-        <img src="Assets/text.png" alt="">
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-
-            <li class="nav-item">
-              <a class="nav-link" href="">Player 456</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <img src="Assets/text.png" alt="">
     </header>
-
-
-    <h1 id="start_game">Press Any key To start</h1>
+     
+    <div class="start">
+      <button class="btn btn-primary" id="start_button">Play</button>
+    </div>
+    
     
     <div id="first_container">
         <div  class="row">
@@ -50,11 +36,6 @@
         </div>
 
 
-        <!-- <div class="timer">00:<span id="remaining_time"></span> </div> -->
-    
-    <!-- <div id="light">
-        <h4 class="light_heading red">RED LIGHT</h4>
-    </div> -->
     <br>
     <div id="player456"></div>
     <div id="finish_line"></div>
@@ -70,6 +51,10 @@
     </audio>
 
     </div>
+  </div>
+   <div id="warning-message">
+     <h1>This website is only viewable in landscape mode Turn Your Mobile</h1>
+   </div>
     <!-- Jvascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="index.js"></script>

@@ -15,22 +15,9 @@ var lightFunction;
 var started=false;
 var num;
 // start game
-$(document).keypress(function(){
-    if(!started)
-    {
-        started=true;
-        $("#start_game").hide();
-        $("#lightCenter").removeClass("red");
-        $("#lightCenter").addClass("green");
-        light="green";
-        playAudio();
-        timer=setInterval(countDown,1000);
-        num=Math.floor(Math.random()*4+1);
-        setTimeout(Tored,num*100);
-        $("#moveButton").prop('disabled',false);
-        $("#stopButton").prop('disabled',false);
-    }
-})
+// $(document).keypress(function(){
+    
+// })
 // Countdown function
 function countDown()
 {
@@ -132,6 +119,22 @@ function winDisplay() {
     clearInterval(timer);
 };
 $(document).ready(function(){
+    $("#start_button").click(function(){
+        if(!started)
+    {
+        started=true;
+        $("#start_game").hide();
+        $("#lightCenter").removeClass("red");
+        $("#lightCenter").addClass("green");
+        light="green";
+        playAudio();
+        timer=setInterval(countDown,1000);
+        num=Math.floor(Math.random()*4+1);
+        setTimeout(Tored,num*100);
+        $("#moveButton").prop('disabled',false);
+        $("#stopButton").prop('disabled',false);
+    }
+    });
     $("#moveButton").click(function(){
         $("#player456").animate({
             left: 1000}, timeReducer, "linear", winDisplay);
